@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background: #121212; 
+  color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center; 
+}
+
+.hidden { 
+  display: none !important; 
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #bbbbbb;
+  line-height: 1.5;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: white;
+  letter-spacing: 5px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #00e5ff;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:active {
+  background: #00b3cc;
+  transform: scale(0.98);
+}
+
+.status {
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+#webcam { 
+  width: 100%; 
+  border-radius: 10px; 
+  transform: scaleX(-1); /* Mirrors the camera to act like a mirror */
+  border: 3px solid #00e5ff;
+  margin-top: 10px;
+}
