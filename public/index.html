@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Camera Controller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="mobile-view" class="hidden container">
+    <h1>Dance Controller</h1>
+    <p>Enter the 4-digit room code shown on your Roku TV:</p>
+    
+    <div class="input-group">
+      <input type="number" id="room-input" placeholder="1234" maxlength="4">
+      <button id="join-btn">Connect</button>
+    </div>
+    
+    <div id="camera-container" class="hidden">
+      <p class="status">Camera Active - Prop your phone up!</p>
+      <video id="webcam" autoplay playsinline muted></video>
+    </div>
+  </div>
+
+  <div id="desktop-view" class="hidden container">
+    <h1>Just Dance Clone</h1>
+    <p>Please open this website on your mobile phone.</p>
+    <p>You need your phone's front camera to track your dance moves!</p>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
